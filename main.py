@@ -27,7 +27,9 @@ canvas.pack(anchor=CENTER, expand=2)
 # Начало программы рисования
 
 rect1 = canvas.create_rectangle(50, 50, 100, 100)
-
+"""for i in range(200):
+    #canvas.move(rect1, -2, 0)
+    canvas.after(1000, lambda: canvas.move(rect1, 200, 200))"""
 
 root.bind('<Motion>', move)
 root.bind('<Button-1>', start)
