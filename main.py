@@ -12,6 +12,7 @@ def move(event):
         x0, y0, x1, y1 = canvas.coords(rect1)
         canvas.coords(rect1, x-50, y-50, x, y)
 
+
 def start(event):
     global gomove
     gomove=True
